@@ -17,7 +17,7 @@ export default function ProductDetail() {
             <div className="container-custom">
                 <div className="grid lg:grid-cols-2 gap-12">
                     <div>
-                        <div className="aspect-[3/4] bg-gradient-to-br from-lavanda via-rosa to-dourado rounded-2xl flex items-center justify-center text-9xl sticky top-24">
+                        <div className="aspect-[3/4] bg-gradient-to-br from-lavanda via-rosa to-dourado rounded-2xl flex items-center justify-center text-6xl md:text-8xl lg:text-9xl sticky top-24">
                             📚
                         </div>
                     </div>

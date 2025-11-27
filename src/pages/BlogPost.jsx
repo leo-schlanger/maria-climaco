@@ -15,7 +15,7 @@ export default function BlogPost() {
         <div className="min-h-screen pt-24 pb-16">
             <article className="container-custom max-w-4xl">
                 <div className="aspect-video bg-gradient-to-br from-lavanda/20 to-rosa/20 rounded-2xl mb-8 flex items-center justify-center">
-                    <span className="text-9xl">✨</span>
+                    <span className="text-6xl md:text-8xl">✨</span>
                 </div>
 
                 <div className="flex flex-wrap gap-4 text-sm text-ameixa/60 mb-6">

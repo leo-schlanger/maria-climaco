@@ -115,7 +115,7 @@ export default function Home() {
                         ].map((pillar, index) => (
                             <Card key={index} className="text-center hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-lavanda/20">
                                 <CardHeader>
-                                    <div className={`w-20 h-20 mx-auto mb-4 rounded-full bg-${pillar.color}/10 flex items-center justify-center text-${pillar.color}`}>
+                                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-lavanda/10 flex items-center justify-center text-lavanda">
                                         {pillar.icon}
                                     </div>
                                     <CardTitle className="text-2xl">{pillar.title}</CardTitle>

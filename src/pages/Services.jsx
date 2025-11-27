@@ -29,7 +29,7 @@ export default function Services() {
                             <Card key={service.id} className="overflow-hidden hover:shadow-2xl transition-all duration-300">
                                 <div className="grid md:grid-cols-3">
                                     <div className="bg-gradient-to-br from-lavanda/20 to-offwhite p-8 flex items-center justify-center">
-                                        <div className="text-9xl">{service.icon}</div>
+                                        <div className="text-6xl md:text-8xl">{service.icon}</div>
                                     </div>
 
                                     <div className="md:col-span-2 p-8 space-y-6">

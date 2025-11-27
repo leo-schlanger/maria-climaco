@@ -53,20 +53,24 @@ export default function Footer() {
                         </p>
                         <div className="space-y-3 text-sm">
                             <div className="flex items-center gap-2 text-white/80">
-                                <Phone className="h-4 w-4 text-dourado" />
+                                <Phone className="h-4 w-4 text-dourado flex-shrink-0" />
                                 <a href={generateWhatsAppLink(WHATSAPP_NUMBER, '')} className="hover:text-dourado transition-colors">
-                                    (11) 99999-9999
+                                    (21) 98697-2274
                                 </a>
                             </div>
                             <div className="flex items-center gap-2 text-white/80">
-                                <Mail className="h-4 w-4 text-dourado" />
-                                <a href={`mailto:${EMAIL}`} className="hover:text-dourado transition-colors">
+                                <Mail className="h-4 w-4 text-dourado flex-shrink-0" />
+                                <a href={`mailto:${EMAIL}`} className="hover:text-dourado transition-colors break-all text-xs">
                                     {EMAIL}
                                 </a>
                             </div>
                             <div className="flex items-start gap-2 text-white/80">
                                 <MapPin className="h-4 w-4 text-dourado mt-0.5 flex-shrink-0" />
-                                <span>Rua Exemplo, 123<br />São Paulo - SP</span>
+                                <span className="text-xs leading-relaxed">
+                                    Av. Airton Senna, 5.500<br />
+                                    Bloco 3, Sala 126<br />
+                                    Uptown Barra - RJ
+                                </span>
                             </div>
                         </div>
                     </div>
