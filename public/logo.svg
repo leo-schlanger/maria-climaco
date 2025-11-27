@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D8A7A7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Lotus Flower -->
+  <g transform="translate(100, 60)">
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="12" fill="#D4AF37"/>
+    
+    <!-- Inner petals -->
+    <ellipse cx="0" cy="-20" rx="10" ry="25" fill="#A78BFA" opacity="0.8"/>
+    <ellipse cx="0" cy="-20" rx="10" ry="25" fill="#A78BFA" opacity="0.8" transform="rotate(72 0 0)"/>
+    <ellipse cx="0" cy="-20" rx="10" ry="25" fill="#A78BFA" opacity="0.8" transform="rotate(144 0 0)"/>
+    <ellipse cx="0" cy="-20" rx="10" ry="25" fill="#A78BFA" opacity="0.8" transform="rotate(216 0 0)"/>
+    <ellipse cx="0" cy="-20" rx="10" ry="25" fill="#A78BFA" opacity="0.8" transform="rotate(288 0 0)"/>
+    
+    <!-- Outer petals -->
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(45 0 0)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(90 0 0)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(135 0 0)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(180 0 0)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(225 0 0)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(270 0 0)"/>
+    <ellipse cx="0" cy="-32" rx="12" ry="30" fill="#D8A7A7" opacity="0.7" transform="rotate(315 0 0)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="130" font-family="Playfair Display, serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#4B2C3A">Maria Climaco</text>
+  <text x="100" y="155" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill="#4B2C3A" opacity="0.7">Fisioterapeuta & Terapeuta do Feminino</text>
+</svg>
