@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { services, categories } from '../data/services'
 import { generateWhatsAppLink } from '../lib/utils'
 
-const WHATSAPP_NUMBER = '5511999999999'
+const WHATSAPP_NUMBER = '5521986972274'
 
 export default function Services() {
     return (

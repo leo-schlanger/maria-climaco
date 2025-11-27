@@ -7,7 +7,7 @@ import { products } from '../data/products'
 import { testimonials } from '../data/testimonials'
 import { generateWhatsAppLink } from '../lib/utils'
 
-const WHATSAPP_NUMBER = '5511999999999'
+const WHATSAPP_NUMBER = '5521986972274'
 const WHATSAPP_MESSAGE = 'Olá, Maria! Gostaria de agendar um atendimento. Vi seu site e me interessei pelos seus serviços.'
 
 export default function Home() {

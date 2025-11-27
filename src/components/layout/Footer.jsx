@@ -24,9 +24,9 @@ const footerNavigation = {
     ],
 }
 
-const WHATSAPP_NUMBER = '5511999999999' // Substituir pelo número real
-const INSTAGRAM_URL = 'https://instagram.com/mariaclimaco'
-const EMAIL = 'contato@mariaclimaco.com.br'
+const WHATSAPP_NUMBER = '5521986972274'
+const INSTAGRAM_URL = 'https://instagram.com/espaco_climaco'
+const EMAIL = 'mariaclimacorj@gmail.com'
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()

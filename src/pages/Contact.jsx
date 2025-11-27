@@ -8,10 +8,9 @@ import { Card } from '../components/ui/Card'
 import { MapPin, Phone, Mail, Instagram, Send, CheckCircle2 } from 'lucide-react'
 import { generateWhatsAppLink } from '../lib/utils'
 
-const WHATSAPP_NUMBER = '5511999999999'
-const INSTAGRAM_URL = 'https://instagram.com/mariaclimaco'
-const EMAIL = 'contato@mariaclimaco.com.br'
-const ADDRESS = 'Rua Exemplo, 123 - Bairro - São Paulo, SP - CEP 00000-000'
+const WHATSAPP_NUMBER = '5521986972274'
+const INSTAGRAM_URL = 'https://instagram.com/espaco_climaco'
+const EMAIL = 'mariaclimacorj@gmail.com'
 
 export default function Contact() {
     const [submitted, setSubmitted] = useState(false)
@@ -57,7 +56,7 @@ export default function Contact() {
                                             rel="noopener noreferrer"
                                             className="text-dourado hover:underline font-medium"
                                         >
-                                            (11) 99999-9999
+                                            (21) 98697-2274
                                         </a>
                                     </div>
                                 </div>
@@ -73,7 +72,7 @@ export default function Contact() {
                                         <p className="text-sm text-ameixa/70 mb-3">Para dúvidas e orçamentos</p>
                                         <a
                                             href={`mailto:${EMAIL}`}
-                                            className="text-lavanda hover:underline font-medium break-all"
+                                            className="text-lavanda hover:underline font-medium break-all text-sm"
                                         >
                                             {EMAIL}
                                         </a>
@@ -95,7 +94,7 @@ export default function Contact() {
                                             rel="noopener noreferrer"
                                             className="text-rosa hover:underline font-medium"
                                         >
-                                            @mariaclimaco
+                                            @espaco_climaco
                                         </a>
                                     </div>
                                 </div>
@@ -106,11 +105,11 @@ export default function Contact() {
                                     <div className="w-12 h-12 rounded-full bg-dourado/10 flex items-center justify-center flex-shrink-0">
                                         <MapPin className="h-6 w-6 text-dourado" />
                                     </div>
-                                    <div>
+                                    <div className="space-y-1">
                                         <h3 className="font-semibold text-lg mb-2">Endereço</h3>
-                                        <p className="text-sm text-ameixa/70">
-                                            {ADDRESS}
-                                        </p>
+                                        <p className="text-base">Av. Airton Senna, 5.500 - Bloco 3, Sala 126</p>
+                                        <p className="text-base">Uptown Barra, Barra da Tijuca</p>
+                                        <p className="text-base">Rio de Janeiro - RJ, CEP: 22775-005</p>
                                     </div>
                                 </div>
                             </Card>
@@ -185,7 +184,7 @@ export default function Contact() {
                                                 id="telefone"
                                                 type="tel"
                                                 {...register('telefone', { required: 'Telefone é obrigatório' })}
-                                                placeholder="(11) 99999-9999"
+                                                placeholder="(21) 99999-9999"
                                                 aria-label="Telefone"
                                                 aria-required="true"
                                             />

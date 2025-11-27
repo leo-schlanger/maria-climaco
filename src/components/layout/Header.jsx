@@ -14,7 +14,7 @@ const navigation = [
     { name: 'Contato', href: '/contato' },
 ]
 
-const WHATSAPP_NUMBER = '5511999999999' // Substituir pelo número real
+const WHATSAPP_NUMBER = '5521986972274'
 const WHATSAPP_MESSAGE = 'Olá! Gostaria de agendar um atendimento com a Maria Climaco.'
 
 export default function Header() {
@@ -37,8 +37,8 @@ export default function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg'
-                    : 'bg-transparent'
+                ? 'bg-white/95 backdrop-blur-md shadow-lg'
+                : 'bg-transparent'
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
@@ -86,8 +86,8 @@ export default function Header() {
                                 key={item.name}
                                 to={item.href}
                                 className={`text-sm font-medium transition-colors hover:text-dourado relative group ${location.pathname === item.href
-                                        ? 'text-dourado'
-                                        : 'text-ameixa'
+                                    ? 'text-dourado'
+                                    : 'text-ameixa'
                                     }`}
                             >
                                 {item.name}
@@ -129,8 +129,8 @@ export default function Header() {
                                 key={item.name}
                                 to={item.href}
                                 className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${location.pathname === item.href
-                                        ? 'bg-lavanda/10 text-lavanda'
-                                        : 'text-ameixa hover:bg-rosa-light/20'
+                                    ? 'bg-lavanda/10 text-lavanda'
+                                    : 'text-ameixa hover:bg-rosa-light/20'
                                     }`}
                             >
                                 {item.name}
