@@ -21,26 +21,14 @@ export default function Services() {
                 </div>
             </section>
 
-            {/* Categories */}
+            {/* Services Grid */}
             <section className="section-padding bg-white">
                 <div className="container-custom">
-                    <div className="flex flex-wrap justify-center gap-4 mb-16">
-                        {categories.map((cat) => (
-                            <button
-                                key={cat.id}
-                                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 bg-${cat.color}/10 text-${cat.color} hover:bg-${cat.color} hover:text-white`}
-                            >
-                                {cat.name}
-                            </button>
-                        ))}
-                    </div>
-
-                    {/* Services Grid */}
                     <div className="space-y-16">
                         {services.map((service) => (
                             <Card key={service.id} className="overflow-hidden hover:shadow-2xl transition-all duration-300">
                                 <div className="grid md:grid-cols-3">
-                                    <div className={`bg-gradient-to-br from-${service.category === 'energia' ? 'lavanda' : service.category === 'estetica' ? 'rosa' : 'dourado'}/20 to-offwhite p-8 flex items-center justify-center`}>
+                                    <div className="bg-gradient-to-br from-lavanda/20 to-offwhite p-8 flex items-center justify-center">
                                         <div className="text-9xl">{service.icon}</div>
                                     </div>
 
@@ -95,7 +83,7 @@ export default function Services() {
                                                             <XCircle className="h-5 w-5" />
                                                             Contraindicações
                                                         </h4>
-                                                        <ul className="space-y-2">
+                                                        <ul className="space-y- 2">
                                                             {service.notForWho.map((item, idx) => (
                                                                 <li key={idx} className="text-sm text-ameixa/70">• {item}</li>
                                                             ))}

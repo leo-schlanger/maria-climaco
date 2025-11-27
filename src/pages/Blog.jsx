@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { blogPosts, blogCategories } from '../data/blog-posts'
+import { blogPosts } from '../data/blog-posts'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card'
 import { Clock, ArrowRight, Calendar } from 'lucide-react'
 import { formatDate } from '../lib/utils'
@@ -18,14 +18,6 @@ export default function Blog() {
 
             <section className="section-padding bg-white">
                 <div className="container-custom">
-                    <div className="flex flex-wrap gap-3 justify-center mb-12">
-                        {blogCategories.map(cat => (
-                            <button key={cat.id} className={`px-4 py-2 rounded-full text-sm bg-${cat.color}/10 text-${cat.color} hover:bg-${cat.color} hover:text-white transition-all`}>
-                                {cat.name}
-                            </button>
-                        ))}
-                    </div>
-
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {blogPosts.map(post => (
                             <Card key={post.id} className="hover:shadow-2xl transition-all group">
