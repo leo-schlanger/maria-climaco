@@ -41,7 +41,7 @@ export default function Footer() {
                             <img
                                 src="/logo.png"
                                 alt="Maria Climaco"
-                                className="h-10 w-auto"
+                                className="h-20 w-auto"
                             />
                             <span className="font-playfair text-xl font-bold">Maria Climaco</span>
                         </div>

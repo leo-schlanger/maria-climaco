@@ -49,7 +49,7 @@ export default function Header() {
                             <img
                                 src="/logo.png"
                                 alt="Maria Climaco"
-                                className="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
+                                className="h-20 md:h-24 w-auto group-hover:scale-105 transition-transform duration-300"
                             />
                             <span className="font-playfair text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300">
                                 Maria Climaco
