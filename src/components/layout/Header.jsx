@@ -37,25 +37,22 @@ export default function Header() {
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
-                <div className="flex items-center justify-between h-24 md:h-32 transition-all duration-500">
+                <div className="flex items-center justify-between h-32 md:h-48 transition-all duration-500">
                     {/* Logo */}
-                    <div className="flex items-center">
-                        <Link to="/" className="flex items-center space-x-6 group outline-none">
+                    <div className="flex items-center mr-8 xl:mr-16">
+                        <Link to="/" className="flex flex-col items-center group outline-none">
                             <div className="relative flex-shrink-0">
                                 <img
                                     src="/logo.png"
                                     alt="Maria Climaco"
-                                    className="h-20 md:h-32 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
+                                    className="h-24 md:h-40 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
                                 />
                                 {scrolled && (
                                     <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
                                 )}
                             </div>
-                            <div className="flex flex-col pt-1 md:pt-2">
-                                <span className="font-playfair text-xl md:text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300 tracking-tight leading-none">
-                                    Maria Climaco
-                                </span>
-                                <span className="text-[9px] uppercase tracking-[0.2em] text-ameixa/60 font-medium mt-2">
+                            <div className="flex flex-col items-center mt-2">
+                                <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-ameixa/80 font-bold whitespace-nowrap">
                                     Fisioterapia & Bem-estar
                                 </span>
                             </div>
@@ -63,7 +60,7 @@ export default function Header() {
                     </div>
 
                     {/* Desktop navigation */}
-                    <div className="hidden lg:flex lg:gap-x-6 xl:gap-x-8 lg:items-center h-full mx-auto">
+                    <div className="hidden lg:flex lg:gap-x-8 xl:gap-x-12 lg:items-center h-full mx-auto">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
