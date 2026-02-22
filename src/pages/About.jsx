@@ -37,8 +37,12 @@ export default function About() {
                         </div>
                         <div className="relative">
                             <div className="aspect-square rounded-2xl bg-gradient-to-br from-lavanda via-rosa to-dourado p-1">
-                                <div className="w-full h-full rounded-2xl bg-offwhite flex items-center justify-center">
-                                    <Heart className="w-32 h-32 text-lavanda" />
+                                <div className="w-full h-full rounded-2xl bg-offwhite overflow-hidden">
+                                    <img
+                                        src="/maria-profile.jpg"
+                                        alt="Maria Climaco"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>

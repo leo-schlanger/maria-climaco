@@ -67,8 +67,12 @@ export default function Home() {
                             <div className="relative w-full max-w-md">
                                 {/* Placeholder for hero image */}
                                 <div className="aspect-square rounded-full bg-gradient-to-br from-lavanda via-rosa to-dourado p-1">
-                                    <div className="w-full h-full rounded-full bg-offwhite flex items-center justify-center">
-                                        <Flower2 className="w-32 h-32 text-lavanda" />
+                                    <div className="w-full h-full rounded-full bg-offwhite overflow-hidden">
+                                        <img
+                                            src="/maria-profile.jpg"
+                                            alt="Maria Climaco"
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
                                 </div>
                                 {/* Decorative floating elements */}
