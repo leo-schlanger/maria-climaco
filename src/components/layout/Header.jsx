@@ -37,22 +37,22 @@ export default function Header() {
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
-                <div className="flex items-center justify-between h-32 md:h-48 transition-all duration-500">
+                <div className="flex items-center justify-between h-40 md:h-56 transition-all duration-500">
                     {/* Logo */}
-                    <div className="flex items-center mr-8 xl:mr-16">
-                        <Link to="/" className="flex flex-col items-center group outline-none">
+                    <div className="flex items-center mr-10 xl:mr-20">
+                        <Link to="/" className="flex flex-col items-center group outline-none py-2">
                             <div className="relative flex-shrink-0">
                                 <img
                                     src="/logo.png"
                                     alt="Maria Climaco"
-                                    className="h-24 md:h-40 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
+                                    className="h-28 md:h-44 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
                                 />
                                 {scrolled && (
-                                    <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
+                                    <div className="absolute top-2 right-2 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
                                 )}
                             </div>
-                            <div className="flex flex-col items-center mt-2">
-                                <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-ameixa/80 font-bold whitespace-nowrap">
+                            <div className="flex flex-col items-center -mt-4 md:-mt-6 z-10">
+                                <span className="text-[10px] md:text-sm uppercase tracking-[0.3em] text-ameixa font-bold whitespace-nowrap bg-white/90 px-3 py-1 rounded-full shadow-sm backdrop-blur-sm border border-rosa-light/20">
                                     Fisioterapia & Bem-estar
                                 </span>
                             </div>
