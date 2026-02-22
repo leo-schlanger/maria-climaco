@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone, Heart } from 'lucide-react'
 import { Button } from '../ui/Button'
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '../ui/Sheet'
 import { generateWhatsAppLink } from '@/lib/utils'
 
 const navigation = [
@@ -18,7 +19,6 @@ const WHATSAPP_NUMBER = '5521986972274'
 const WHATSAPP_MESSAGE = 'Olá! Gostaria de agendar um atendimento com a Maria Climaco.'
 
 export default function Header() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
     const location = useLocation()
 
@@ -30,126 +30,141 @@ export default function Header() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    useEffect(() => {
-        setMobileMenuOpen(false)
-    }, [location])
-
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? 'bg-white/95 backdrop-blur-md shadow-lg'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+                ? 'bg-white/80 backdrop-blur-lg shadow-sm border-b border-rosa-light/20'
                 : 'bg-transparent'
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-20 md:h-24 transition-all duration-500">
                     {/* Logo */}
                     <div className="flex lg:flex-1">
-                        <Link to="/" className="flex items-center space-x-3 group">
-                            <img
-                                src="/logo.png"
-                                alt="Maria Climaco"
-                                className="h-16 md:h-24 w-auto group-hover:scale-105 transition-transform duration-300"
-                            />
-                            <span className="hidden sm:block font-playfair text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300">
-                                Maria Climaco
-                            </span>
+                        <Link to="/" className="flex items-center space-x-3 group outline-none">
+                            <div className="relative">
+                                <img
+                                    src="/logo.png"
+                                    alt="Maria Climaco"
+                                    className="h-14 md:h-20 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
+                                />
+                                {scrolled && (
+                                    <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
+                                )}
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="hidden sm:block font-playfair text-xl md:text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300 tracking-tight leading-none">
+                                    Maria Climaco
+                                </span>
+                                <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-ameixa/60 font-medium mt-1">
+                                    Fisioterapia & Bem-estar
+                                </span>
+                            </div>
                         </Link>
                     </div>
 
-                    {/* Mobile menu button */}
-                    <div className="flex lg:hidden">
-                        <button
-                            type="button"
-                            className="inline-flex items-center justify-center rounded-md p-2.5 text-ameixa hover:bg-rosa-light/30 transition-colors"
-                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            aria-label="Toggle menu"
-                        >
-                            {mobileMenuOpen ? (
-                                <X className="h-6 w-6" aria-hidden="true" />
-                            ) : (
-                                <Menu className="h-6 w-6" aria-hidden="true" />
-                            )}
-                        </button>
-                    </div>
-
                     {/* Desktop navigation */}
-                    <div className="hidden lg:flex lg:gap-x-8 lg:items-center">
+                    <div className="hidden lg:flex lg:gap-x-10 lg:items-center">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
                                 to={item.href}
-                                className={`text-sm font-medium transition-colors hover:text-dourado relative group ${location.pathname === item.href
+                                className={`text-sm font-semibold transition-all hover:text-dourado relative group py-2 ${location.pathname === item.href
                                     ? 'text-dourado'
-                                    : 'text-ameixa'
+                                    : 'text-ameixa/80'
                                     }`}
                             >
                                 {item.name}
                                 <span
-                                    className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-dourado transition-all duration-300 group-hover:w-full ${location.pathname === item.href ? 'w-full' : ''
+                                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-dourado transform origin-left transition-transform duration-300 ${location.pathname === item.href ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                                         }`}
                                 />
                             </Link>
                         ))}
                     </div>
 
-                    {/* CTA Button */}
-                    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <Button
-                            asChild
-                            variant="default"
-                            size="sm"
-                        >
-                            <a
-                                href={generateWhatsAppLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE)}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-2"
-                            >
-                                <Phone className="h-4 w-4" />
-                                Agendar
-                            </a>
-                        </Button>
-                    </div>
-                </div>
-            </nav>
-
-            {/* Mobile menu */}
-            {mobileMenuOpen && (
-                <div className="lg:hidden bg-white border-t border-rosa-light/30 shadow-lg animate-slide-in">
-                    <div className="container-custom py-6 space-y-2">
-                        {navigation.map((item) => (
-                            <Link
-                                key={item.name}
-                                to={item.href}
-                                className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${location.pathname === item.href
-                                    ? 'bg-lavanda/10 text-lavanda'
-                                    : 'text-ameixa hover:bg-rosa-light/20'
-                                    }`}
-                            >
-                                {item.name}
-                            </Link>
-                        ))}
-                        <div className="pt-4">
+                    {/* CTA Button & Mobile Menu */}
+                    <div className="flex lg:flex-1 lg:justify-end items-center gap-4">
+                        <div className="hidden md:block">
                             <Button
                                 asChild
                                 variant="default"
-                                className="w-full"
+                                size="sm"
+                                className="shadow-md hover:shadow-lg"
                             >
                                 <a
                                     href={generateWhatsAppLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE)}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2"
+                                    className="flex items-center gap-2"
                                 >
                                     <Phone className="h-4 w-4" />
-                                    Agendar Atendimento
+                                    Agendar
                                 </a>
                             </Button>
                         </div>
+
+                        {/* Mobile Menu Trigger */}
+                        <div className="lg:hidden">
+                            <Sheet>
+                                <SheetTrigger asChild>
+                                    <button
+                                        type="button"
+                                        className="inline-flex items-center justify-center rounded-full p-2.5 text-ameixa hover:bg-rosa-light/20 transition-all border border-rosa-light/30 shadow-sm"
+                                        aria-label="Menu"
+                                    >
+                                        <Menu className="h-6 w-6" />
+                                    </button>
+                                </SheetTrigger>
+                                <SheetContent side="right" className="flex flex-col h-full bg-offwhite/95 backdrop-blur-md border-l-rosa-light/20">
+                                    <SheetHeader className="text-left mb-8">
+                                        <SheetTitle className="flex items-center gap-2">
+                                            <Heart className="h-5 w-5 text-rosa" />
+                                            Maria Climaco
+                                        </SheetTitle>
+                                    </SheetHeader>
+
+                                    <div className="flex flex-col space-y-4 flex-1">
+                                        {navigation.map((item) => (
+                                            <Link
+                                                key={item.name}
+                                                to={item.href}
+                                                className={`text-lg font-medium py-3 px-4 rounded-xl transition-all ${location.pathname === item.href
+                                                    ? 'bg-ameixa text-white shadow-md'
+                                                    : 'text-ameixa hover:bg-rosa-light/30'
+                                                    }`}
+                                            >
+                                                {item.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+
+                                    <div className="mt-auto pt-8 border-t border-rosa-light/30">
+                                        <Button
+                                            asChild
+                                            variant="default"
+                                            className="w-full h-14 rounded-2xl text-lg shadow-lg"
+                                        >
+                                            <a
+                                                href={generateWhatsAppLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE)}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center justify-center gap-3"
+                                            >
+                                                <Phone className="h-5 w-5" />
+                                                Agendar Atendimento
+                                            </a>
+                                        </Button>
+                                        <p className="text-center text-xs text-ameixa/40 mt-6">
+                                            © 2025 Maria Climaco. <br />Todos os direitos reservados.
+                                        </p>
+                                    </div>
+                                </SheetContent>
+                            </Sheet>
+                        </div>
                     </div>
                 </div>
-            )}
+            </nav>
         </header>
     )
 }

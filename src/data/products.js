@@ -217,7 +217,7 @@ export const getProductsByCategory = (category) =>
     products.filter(product => product.category === category)
 
 export const productCategories = [
-    { id: 'ebook', name: 'E-books', icon: '📚' },
-    { id: 'planner', name: 'Planners', icon: '📅' },
-    { id: 'audio', name: 'Áudios', icon: '🎧' }
+    { id: 'ebook', name: 'E-books', icon: 'BookOpen' },
+    { id: 'planner', name: 'Planners', icon: 'Calendar' },
+    { id: 'audio', name: 'Áudios', icon: 'Headphones' }
 ]

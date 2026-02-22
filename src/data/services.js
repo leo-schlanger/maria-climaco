@@ -24,7 +24,7 @@ export const services = [
             'Fraturas não consolidadas sem liberação médica'
         ],
         duration: '60 minutos',
-        icon: '🦴'
+        icon: 'Stethoscope'
     },
     {
         id: 'pos-operatorio',
@@ -50,7 +50,7 @@ export const services = [
             'Presença de infecções ativas'
         ],
         duration: '60 minutos',
-        icon: '💆‍♀️'
+        icon: 'Activity'
     },
     {
         id: 'drenagem-linfatica',
@@ -78,7 +78,7 @@ export const services = [
             'Problemas cardíacos graves sem liberação médica'
         ],
         duration: '60 minutos',
-        icon: '🌊'
+        icon: 'Droplets'
     },
     {
         id: 'massagem-relaxante',
@@ -105,7 +105,7 @@ export const services = [
             'Lesões musculares graves sem avaliação'
         ],
         duration: '60-90 minutos',
-        icon: '🧘‍♀️'
+        icon: 'Coffee'
     },
     {
         id: 'massagem-modeladora',
@@ -132,7 +132,7 @@ export const services = [
             'Pós-operatório recente (sem liberação)'
         ],
         duration: '60 minutos',
-        icon: '💪'
+        icon: 'Dumbbell'
     },
     {
         id: 'estetica-avancada',
@@ -159,7 +159,7 @@ export const services = [
             'Câncer ativo ou histórico recente'
         ],
         duration: '60-90 minutos',
-        icon: '✨'
+        icon: 'Zap'
     },
     {
         id: 'banhos-sagrados',
@@ -185,7 +185,7 @@ export const services = [
             'Esperando resultados apenas físicos'
         ],
         duration: '90-120 minutos',
-        icon: '🌙'
+        icon: 'Moon'
     },
     {
         id: 'meditacoes-guiadas',
@@ -210,7 +210,7 @@ export const services = [
             'Crises psiquiátricas agudas sem acompanhamento'
         ],
         duration: '45-60 minutos',
-        icon: '🧘'
+        icon: 'Wind'
     },
     {
         id: 'terapia-energetica',
@@ -236,7 +236,7 @@ export const services = [
             'Expectativa de cura instantânea'
         ],
         duration: '60-90 minutos',
-        icon: '⚡'
+        icon: 'Sparkles'
     }
 ]
 

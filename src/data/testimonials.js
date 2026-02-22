@@ -12,7 +12,7 @@ export const testimonials = [
         id: 2,
         name: 'Renata Lima',
         service: 'Ritual Feminino + Terapia Energética',
-        text: 'Passei por um momento muito difícil de transição na minha vida. O trabalho da Maria me reconectou com minha essência feminina e me devolveu a força que eu achei que tinha perdido. Gratidão eterna! ✨',
+        text: 'Passei por um momento muito difícil de transição na minha vida. O trabalho da Maria me reconectou com minha essência feminina e me devolveu a força que eu achei que tinha perdido. Gratidão eterna!',
         rating: 5,
         image: '/assets/testimonials/renata.jpg',
         date: '2024-09-28'
