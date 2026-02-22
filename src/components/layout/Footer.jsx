@@ -44,9 +44,9 @@ export default function Footer() {
                                     alt="Maria Climaco"
                                     className="h-20 md:h-32 w-auto group-hover:scale-105 transition-transform duration-500 brightness-110"
                                 />
-                                <div className="flex flex-col">
-                                    <span className="font-playfair text-xl font-bold tracking-tight">Maria Climaco</span>
-                                    <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-medium">Fisioterapia & Bem-estar</span>
+                                <div className="flex flex-col pt-3 md:pt-4">
+                                    <span className="font-playfair text-xl md:text-2xl font-bold tracking-tight">Maria Climaco</span>
+                                    <span className="text-[10px] uppercase tracking-[0.2em] text-white/40 font-medium mt-2">Fisioterapia & Bem-estar</span>
                                 </div>
                             </div>
                         </Link>

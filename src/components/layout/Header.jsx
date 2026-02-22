@@ -52,11 +52,11 @@ export default function Header() {
                                     <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
                                 )}
                             </div>
-                            <div className="flex flex-col">
+                            <div className="flex flex-col pt-1 md:pt-2">
                                 <span className="hidden sm:block font-playfair text-xl md:text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300 tracking-tight leading-none">
                                     Maria Climaco
                                 </span>
-                                <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-ameixa/60 font-medium mt-1">
+                                <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-ameixa/60 font-medium mt-2">
                                     Fisioterapia & Bem-estar
                                 </span>
                             </div>
@@ -64,19 +64,19 @@ export default function Header() {
                     </div>
 
                     {/* Desktop navigation */}
-                    <div className="hidden lg:flex lg:gap-x-10 lg:items-center">
+                    <div className="hidden lg:flex lg:gap-x-10 lg:items-center h-full">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
                                 to={item.href}
-                                className={`text-sm font-semibold transition-all hover:text-dourado relative group py-2 ${location.pathname === item.href
+                                className={`text-sm font-bold transition-all hover:text-dourado relative group py-4 ${location.pathname === item.href
                                     ? 'text-dourado'
                                     : 'text-ameixa/80'
                                     }`}
                             >
                                 {item.name}
                                 <span
-                                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-dourado transform origin-left transition-transform duration-300 ${location.pathname === item.href ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                                    className={`absolute bottom-2 left-0 w-full h-0.5 bg-dourado transform origin-left transition-transform duration-300 ${location.pathname === item.href ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                                         }`}
                                 />
                             </Link>
