@@ -42,7 +42,7 @@ export default function Footer() {
                                 <img
                                     src="/logo.png"
                                     alt="Maria Climaco"
-                                    className="h-16 md:h-20 w-auto group-hover:scale-105 transition-transform duration-500 brightness-110"
+                                    className="h-20 md:h-32 w-auto group-hover:scale-105 transition-transform duration-500 brightness-110"
                                 />
                                 <div className="flex flex-col">
                                     <span className="font-playfair text-xl font-bold tracking-tight">Maria Climaco</span>

@@ -38,7 +38,7 @@ export default function Header() {
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
-                <div className="flex items-center justify-between h-20 md:h-24 transition-all duration-500">
+                <div className="flex items-center justify-between h-24 md:h-32 transition-all duration-500">
                     {/* Logo */}
                     <div className="flex lg:flex-1">
                         <Link to="/" className="flex items-center space-x-3 group outline-none">
@@ -46,7 +46,7 @@ export default function Header() {
                                 <img
                                     src="/logo.png"
                                     alt="Maria Climaco"
-                                    className="h-14 md:h-20 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
+                                    className="h-16 md:h-28 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
                                 />
                                 {scrolled && (
                                     <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />

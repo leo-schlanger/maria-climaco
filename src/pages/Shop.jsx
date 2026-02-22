@@ -101,8 +101,8 @@ export default function Shop() {
                                     </CardContent>
 
                                     <CardFooter className="p-8 pt-6">
-                                        <Button asChild className="w-full h-14 rounded-2xl bg-offwhite hover:bg-ameixa text-ameixa hover:text-white transition-all duration-300 border border-ameixa/5 group/btn overflow-hidden relative">
-                                            <Link to={`/loja/${product.slug}`} className="flex items-center justify-center gap-2 font-bold relative z-10">
+                                        <Button asChild className="w-full h-16 rounded-2xl bg-offwhite hover:bg-ameixa text-ameixa hover:text-white transition-all duration-300 border border-ameixa/5 group/btn overflow-hidden relative shadow-sm">
+                                            <Link to={`/loja/${product.slug}`} className="flex items-center justify-center gap-2 font-bold relative z-10 text-base">
                                                 Ver Detalhes
                                                 <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                                             </Link>

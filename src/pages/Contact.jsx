@@ -129,6 +129,28 @@ export default function Contact() {
 
                         {/* Form column */}
                         <div className="lg:col-span-8 space-y-12">
+                            {/* Map integration with premium styling */}
+                            <div className="space-y-8">
+                                <div className="flex items-center gap-4">
+                                    <h2 className="text-2xl font-playfair font-bold text-ameixa">Onde me encontrar</h2>
+                                    <div className="h-px bg-ameixa/10 flex-grow" />
+                                </div>
+                                <div className="rounded-[3rem] overflow-hidden shadow-2xl h-[450px] border-8 border-white group relative">
+                                    <iframe
+                                        src="https://www.google.com/maps?q=Av.+Ayrton+Senna,+5500+-+Uptown+Barra,+Rio+de+Janeiro+-+RJ&output=embed"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen=""
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                        title="Google Maps - Espaço Clímaco"
+                                        className="grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
+                                    />
+                                    <div className="absolute inset-0 pointer-events-none border border-ameixa/10 rounded-[2.5rem]" />
+                                </div>
+                            </div>
+
                             <Card className="p-1 md:p-12 rounded-[3rem] border border-ameixa/5 shadow-2xl bg-white overflow-hidden relative">
                                 <div className="p-8 md:p-0 space-y-10">
                                     <div className="space-y-4">
@@ -249,28 +271,6 @@ export default function Contact() {
                                     </form>
                                 </div>
                             </Card>
-
-                            {/* Map integration with premium styling */}
-                            <div className="space-y-8 pt-8">
-                                <div className="flex items-center gap-4">
-                                    <h2 className="text-2xl font-playfair font-bold text-ameixa">Onde me encontrar</h2>
-                                    <div className="h-px bg-ameixa/10 flex-grow" />
-                                </div>
-                                <div className="rounded-[3rem] overflow-hidden shadow-2xl h-[450px] border-8 border-white group relative">
-                                    <iframe
-                                        src="https://www.google.com/maps?q=Av.+Ayrton+Senna,+5500+-+Uptown+Barra,+Rio+de+Janeiro+-+RJ&output=embed"
-                                        width="100%"
-                                        height="100%"
-                                        style={{ border: 0 }}
-                                        allowFullScreen=""
-                                        loading="lazy"
-                                        referrerPolicy="no-referrer-when-downgrade"
-                                        title="Google Maps - Espaço Clímaco"
-                                        className="grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700"
-                                    />
-                                    <div className="absolute inset-0 pointer-events-none border border-ameixa/10 rounded-[2.5rem]" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

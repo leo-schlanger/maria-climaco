@@ -63,20 +63,20 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start pt-4">
-                                <Button asChild size="lg" variant="default" className="shadow-xl shadow-dourado/20 hover:shadow-dourado/40 group">
+                                <Button asChild size="lg" variant="default" className="shadow-xl shadow-dourado/20 hover:shadow-dourado/40 group h-16 px-10 rounded-2xl">
                                     <a
                                         href={generateWhatsAppLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE)}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2"
+                                        className="flex items-center gap-2 text-lg"
                                     >
                                         <Phone className="h-5 w-5" />
                                         Agende seu Atendimento
                                         <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                                     </a>
                                 </Button>
-                                <Button asChild size="lg" variant="outline" className="border-ameixa/10 text-ameixa hover:bg-ameixa/5 transition-all">
-                                    <Link to="/loja" className="flex items-center gap-2">
+                                <Button asChild size="lg" variant="outline" className="border-ameixa/10 text-ameixa hover:bg-ameixa/5 transition-all h-16 px-10 rounded-2xl">
+                                    <Link to="/loja" className="flex items-center gap-2 text-lg">
                                         <ShoppingBag className="h-5 w-5" />
                                         Conheça nossa Loja
                                     </Link>
@@ -84,10 +84,10 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="relative lg:h-[700px] flex items-center justify-center animate-fade-in animation-delay-200">
-                            <div className="relative w-full max-w-lg">
+                        <div className="relative lg:h-[600px] flex items-center justify-center animate-fade-in animation-delay-200">
+                            <div className="relative w-full max-w-sm md:max-w-md">
                                 {/* Main Hero Image Container */}
-                                <div className="aspect-[4/5] rounded-[2rem] bg-gradient-to-br from-lavanda/20 via-rosa/20 to-dourado/20 p-px shadow-2xl">
+                                <div className="aspect-[4/5] rounded-[2.5rem] bg-gradient-to-br from-lavanda/20 via-rosa/20 to-dourado/20 p-px shadow-2xl">
                                     <div className="w-full h-full rounded-[2rem] bg-offwhite overflow-hidden relative group">
                                         <img
                                             src="/maria-profile.jpg"
@@ -299,7 +299,7 @@ export default function Home() {
                     </div>
 
                     <div className="text-center">
-                        <Button asChild size="lg" variant="outline" className="rounded-full px-12 border-ameixa/20 text-ameixa font-bold hover:bg-ameixa hover:text-white transition-all h-14">
+                        <Button asChild size="lg" variant="outline" className="rounded-2xl px-12 border-ameixa/10 text-ameixa font-bold hover:bg-ameixa/5 transition-all h-16 text-lg shadow-sm">
                             <Link to="/loja" className="flex items-center gap-3">
                                 <ShoppingBag className="h-5 w-5" />
                                 Ver Todos os Produtos
