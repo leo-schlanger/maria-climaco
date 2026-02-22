@@ -37,18 +37,18 @@ export default function Header() {
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
-                <div className="flex items-center justify-between h-20 md:h-28 transition-all duration-500">
+                <div className="flex items-center justify-between h-16 md:h-20 transition-all duration-500">
                     {/* Logo */}
                     <div className="flex items-center mr-10 xl:mr-20">
-                        <Link to="/" className="flex flex-col items-center group outline-none py-2">
+                        <Link to="/" className="flex flex-col items-center group outline-none">
                             <div className="relative flex-shrink-0">
                                 <img
                                     src="/logo.png"
                                     alt="Maria Climaco"
-                                    className="h-12 md:h-16 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
+                                    className="h-20 md:h-28 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
                                 />
                                 {scrolled && (
-                                    <div className="absolute top-2 right-2 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
+                                    <div className="absolute top-4 right-2 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
                                 )}
                             </div>
                         </Link>
