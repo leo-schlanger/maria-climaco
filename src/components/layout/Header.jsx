@@ -9,7 +9,6 @@ const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Sobre Mim', href: '/sobre' },
     { name: 'Serviços', href: '/servicos' },
-    { name: 'Terapias Energéticas', href: '/terapias-energeticas' },
     { name: 'Loja', href: '/loja' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contato', href: '/contato' },

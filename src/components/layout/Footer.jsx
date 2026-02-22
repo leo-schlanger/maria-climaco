@@ -8,7 +8,6 @@ const footerNavigation = {
         { name: 'Home', href: '/' },
         { name: 'Sobre Mim', href: '/sobre' },
         { name: 'Serviços', href: '/servicos' },
-        { name: 'Terapias Energéticas', href: '/terapias-energeticas' },
     ],
     loja: [
         { name: 'Loja Digital', href: '/loja' },

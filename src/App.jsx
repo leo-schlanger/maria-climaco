@@ -5,7 +5,6 @@ import Footer from './components/layout/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
-import EnergyTherapies from './pages/EnergyTherapies'
 import Shop from './pages/Shop'
 import ProductDetail from './pages/ProductDetail'
 import Blog from './pages/Blog'
@@ -29,7 +28,6 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/sobre" element={<About />} />
                     <Route path="/servicos" element={<Services />} />
-                    <Route path="/terapias-energeticas" element={<EnergyTherapies />} />
                     <Route path="/loja" element={<Shop />} />
                     <Route path="/loja/:productId" element={<ProductDetail />} />
                     <Route path="/blog" element={<Blog />} />
