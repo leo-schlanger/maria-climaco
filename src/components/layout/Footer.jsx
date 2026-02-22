@@ -41,9 +41,9 @@ export default function Footer() {
                             <img
                                 src="/logo.png"
                                 alt="Maria Climaco"
-                                className="h-20 w-auto"
+                                className="h-16 md:h-20 w-auto"
                             />
-                            <span className="font-playfair text-xl font-bold">Maria Climaco</span>
+                            <span className="hidden sm:block font-playfair text-xl font-bold">Maria Climaco</span>
                         </div>
                         <p className="text-white/80 text-sm leading-relaxed mb-6">
                             Amor que cura. Energia que transforma. Feminino que desperta.
