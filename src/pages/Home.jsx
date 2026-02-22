@@ -34,7 +34,7 @@ export default function Home() {
                             </div>
 
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-ameixa leading-tight">
-                                Amor que cura,<br />
+                                Amor que <span className="text-gradient">cura</span>,<br />
                                 toque que <span className="text-gradient">transforma</span>
                             </h1>
 

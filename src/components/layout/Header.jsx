@@ -46,17 +46,11 @@ export default function Header() {
                     {/* Logo */}
                     <div className="flex lg:flex-1">
                         <Link to="/" className="flex items-center space-x-3 group">
-                            <div className="w-12 h-12 flex items-center justify-center">
-                                <svg
-                                    viewBox="0 0 100 100"
-                                    className="w-full h-full text-lavanda group-hover:text-dourado transition-colors duration-300"
-                                    fill="currentColor"
-                                >
-                                    {/* Lotus icon */}
-                                    <path d="M50 20 C35 30, 30 45, 30 55 C30 65, 35 75, 50 80 C65 75, 70 65, 70 55 C70 45, 65 30, 50 20 Z M50 25 C40 35, 35 48, 35 55 C35 62, 40 70, 50 75 C60 70, 65 62, 65 55 C65 48, 60 35, 50 25 Z" />
-                                    <circle cx="50" cy="55" r="8" />
-                                </svg>
-                            </div>
+                            <img
+                                src="/logo.png"
+                                alt="Maria Climaco"
+                                className="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
+                            />
                             <span className="font-playfair text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300">
                                 Maria Climaco
                             </span>

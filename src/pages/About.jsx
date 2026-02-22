@@ -9,7 +9,7 @@ export default function About() {
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
                             <h1 className="text-5xl md:text-6xl font-playfair font-bold text-ameixa">
-                                Sobre Mim
+                                Sobre <span className="text-gradient">Mim</span>
                             </h1>
                             <p className="text-xl text-ameixa/80 leading-relaxed">
                                 Maria Climaco - Fisioterapeuta & Terapeuta do Feminino
@@ -118,7 +118,7 @@ export default function About() {
             <section className="section-padding bg-white">
                 <div className="container-custom max-w-4xl">
                     <h2 className="text-4xl font-playfair font-bold text-center text-ameixa mb-16">
-                        Jornada de 28 Anos
+                        Jornada de <span className="text-gradient">28 Anos</span>
                     </h2>
                     <div className="space-y-8">
                         {[

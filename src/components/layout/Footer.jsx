@@ -38,14 +38,11 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="lg:col-span-1">
                         <div className="flex items-center space-x-3 mb-6">
-                            <svg
-                                viewBox="0 0 100 100"
-                                className="w-10 h-10 text-dourado"
-                                fill="currentColor"
-                            >
-                                <path d="M50 20 C35 30, 30 45, 30 55 C30 65, 35 75, 50 80 C65 75, 70 65, 70 55 C70 45, 65 30, 50 20 Z M50 25 C40 35, 35 48, 35 55 C35 62, 40 70, 50 75 C60 70, 65 62, 65 55 C65 48, 60 35, 50 25 Z" />
-                                <circle cx="50" cy="55" r="8" />
-                            </svg>
+                            <img
+                                src="/logo.png"
+                                alt="Maria Climaco"
+                                className="h-10 w-auto"
+                            />
                             <span className="font-playfair text-xl font-bold">Maria Climaco</span>
                         </div>
                         <p className="text-white/80 text-sm leading-relaxed mb-6">
