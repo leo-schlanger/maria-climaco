@@ -238,13 +238,18 @@ export default function Contact() {
                                 </form>
                             </Card>
 
-                            {/* Map Placeholder */}
-                            <div className="mt-8 rounded-2xl overflow-hidden shadow-lg h-64 bg-gradient-to-br from-lavanda/20 to-rosa/20 flex items-center justify-center">
-                                <div className="text-center">
-                                    <MapPin className="h-12 w-12 text-ameixa/40 mx-auto mb-3" />
-                                    <p className="text-ameixa/60">Mapa do Google será inserido aqui</p>
-                                    <p className="text-sm text-ameixa/40 mt-1">Substitua com iframe do Google Maps</p>
-                                </div>
+                            {/* Google Map */}
+                            <div className="mt-8 rounded-2xl overflow-hidden shadow-lg h-80 border-2 border-lavanda/20">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Av.+Ayrton+Senna,+5500+-+Uptown+Barra,+Rio+de+Janeiro+-+RJ&output=embed"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Google Maps - Espaço Clímaco"
+                                />
                             </div>
                         </div>
                     </div>
