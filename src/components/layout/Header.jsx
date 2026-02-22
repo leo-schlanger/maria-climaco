@@ -51,11 +51,6 @@ export default function Header() {
                                     <div className="absolute top-2 right-2 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
                                 )}
                             </div>
-                            <div className="flex flex-col items-center -mt-4 md:-mt-6 z-10">
-                                <span className="text-[10px] md:text-sm uppercase tracking-[0.3em] text-ameixa font-bold whitespace-nowrap bg-white/90 px-3 py-1 rounded-full shadow-sm backdrop-blur-sm border border-rosa-light/20">
-                                    Fisioterapia & Bem-estar
-                                </span>
-                            </div>
                         </Link>
                     </div>
 
