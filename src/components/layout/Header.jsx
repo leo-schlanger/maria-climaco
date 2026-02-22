@@ -32,9 +32,9 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-                ? 'bg-white/80 backdrop-blur-lg shadow-sm border-b border-rosa-light/20'
-                : 'bg-transparent'
+            className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white ${scrolled
+                ? 'shadow-md border-b border-rosa-light/20'
+                : 'border-b border-transparent'
                 }`}
         >
             <nav className="container-custom" aria-label="Global">
@@ -116,7 +116,7 @@ export default function Header() {
                                         <Menu className="h-6 w-6" />
                                     </button>
                                 </SheetTrigger>
-                                <SheetContent side="right" className="flex flex-col h-full bg-offwhite/95 backdrop-blur-md border-l-rosa-light/20">
+                                <SheetContent side="right" className="flex flex-col h-full bg-offwhite border-l-rosa-light/20">
                                     <SheetHeader className="text-left mb-8">
                                         <SheetTitle className="flex items-center gap-2">
                                             <Heart className="h-5 w-5 text-rosa" />

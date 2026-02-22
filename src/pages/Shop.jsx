@@ -24,7 +24,7 @@ export default function Shop() {
                     <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-6 py-1.5 uppercase tracking-widest text-[10px] font-bold">
                         Universo Digital
                     </Badge>
-                    <h1 className="text-5xl md:text-7xl font-playfair font-bold">
+                    <h1 className="text-4xl md:text-6xl font-playfair font-bold">
                         Ferramentas para sua <span className="text-dourado">Expansão</span>
                     </h1>
                     <p className="text-xl text-white/60 max-w-3xl mx-auto leading-relaxed font-light">
@@ -123,7 +123,7 @@ export default function Shop() {
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-lavanda/10 rounded-full blur-3xl -ml-32 -mb-32" />
 
                         <div className="relative z-10 max-w-2xl mx-auto space-y-8">
-                            <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white">Pronta para o próximo passo?</h2>
+                            <h2 className="text-2xl md:text-4xl font-playfair font-bold text-white">Pronta para o próximo passo?</h2>
                             <p className="text-xl text-white/60 font-light leading-relaxed">
                                 Nossos produtos digitais foram pensados para levar a experiência do consultório para o seu dia a dia.
                             </p>

@@ -53,11 +53,11 @@ export default function Home() {
                             </div>
 
                             <div className="space-y-4">
-                                <h1 className="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold text-ameixa leading-[1.1] tracking-tight">
+                                <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-ameixa leading-[1.2] tracking-tight">
                                     Onde o <span className="text-gradient">cuidado</span><br />
-                                    encontra a <span className="text-gradient italic">alma</span>
+                                    encontra a <span className="text-gradient italic px-1">alma</span>
                                 </h1>
-                                <p className="text-xl md:text-2xl text-ameixa/70 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
+                                <p className="text-lg md:text-xl text-ameixa/70 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
                                     Fisioterapia avançada e terapias holísticas dedicadas ao despertar da mulher poderosa em você.
                                 </p>
                             </div>
@@ -95,19 +95,6 @@ export default function Home() {
                                             className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-ameixa/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                    </div>
-                                </div>
-
-                                {/* Floating Experience Badge */}
-                                <div className="absolute -bottom-10 -left-10 md:-left-20 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-rosa/20 animate-bounce-subtle">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-14 h-14 rounded-full bg-dourado/10 flex items-center justify-center">
-                                            <Heart className="h-8 w-8 text-dourado fill-dourado/20" />
-                                        </div>
-                                        <div>
-                                            <p className="text-3xl font-bold font-playfair text-ameixa">+40k</p>
-                                            <p className="text-xs font-semibold text-ameixa/60 uppercase tracking-wider">Altas médicas</p>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -261,10 +248,10 @@ export default function Home() {
 
                     <div className="pt-10 flex flex-wrap justify-center gap-4">
                         <Badge variant="outline" className="border-white/20 text-white/60 px-6 py-2">
-                            +500 depoimentos reais
+                            Acolhimento Individualizado
                         </Badge>
                         <Badge variant="outline" className="border-white/20 text-white/60 px-6 py-2">
-                            Nota 5.0 no Google
+                            Resultados Humanizados
                         </Badge>
                     </div>
                 </div>
@@ -331,10 +318,10 @@ export default function Home() {
                         <div className="absolute bottom-0 left-0 w-96 h-96 bg-lavanda/10 rounded-full blur-[100px]" />
 
                         <div className="relative z-10 max-w-4xl mx-auto space-y-10">
-                            <h2 className="text-4xl md:text-7xl font-playfair font-bold leading-tight">
+                            <h2 className="text-3xl md:text-5xl font-playfair font-bold leading-tight">
                                 Sua jornada de <span className="text-dourado">despertar</span> começa agora.
                             </h2>
-                            <p className="text-xl md:text-2xl text-white/70 font-light leading-relaxed">
+                            <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed">
                                 Agende seu atendimento exclusivo e sinta o poder da cura que integra corpo e alma.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">

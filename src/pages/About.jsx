@@ -19,33 +19,14 @@ export default function About() {
                             <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-6 py-1.5 uppercase tracking-widest text-[10px] font-bold">
                                 Conheça a Jornada
                             </Badge>
-                            <h1 className="text-5xl md:text-7xl font-playfair font-bold leading-tight">
+                            <h1 className="text-4xl md:text-6xl font-playfair font-bold leading-tight">
                                 Maria Climaco: <span className="text-dourado italic">Ciência & Essência</span>
                             </h1>
-                            <p className="text-xl text-white/60 leading-relaxed font-light max-w-xl">
+                            <p className="text-lg text-white/60 leading-relaxed font-light max-w-xl">
                                 Fisioterapeuta com 28 anos de estrada, transformando vidas através de um olhar integral que une a excelência técnica à sensibilidade do sagrado feminino.
                             </p>
 
-                            <div className="flex flex-wrap gap-8 pt-4">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-14 h-14 rounded-2xl bg-dourado/20 flex items-center justify-center border border-dourado/30 backdrop-blur-sm">
-                                        <Award className="h-6 w-6 text-dourado" />
-                                    </div>
-                                    <div>
-                                        <p className="text-2xl font-bold font-playfair">28 Anos</p>
-                                        <p className="text-xs uppercase tracking-tighter text-white/40 font-bold">De Experiência</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <div className="w-14 h-14 rounded-2xl bg-lavanda/20 flex items-center justify-center border border-lavanda/30 backdrop-blur-sm">
-                                        <Heart className="h-6 w-6 text-lavanda" />
-                                    </div>
-                                    <div>
-                                        <p className="text-2xl font-bold font-playfair">10k+</p>
-                                        <p className="text-xs uppercase tracking-tighter text-white/40 font-bold">Vidas Transformadas</p>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* Removed stats cards to maintain authenticity */}
                         </div>
 
                         <div className="relative animate-in zoom-in duration-1000">
@@ -200,8 +181,8 @@ export default function About() {
                         <div className="absolute -top-24 -right-24 w-96 h-96 bg-dourado/10 rounded-full blur-[100px] group-hover:scale-110 transition-transform duration-700" />
 
                         <div className="relative z-10 space-y-10 max-w-2xl mx-auto">
-                            <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight">Vamos escrever o seu <span className="text-dourado">Próximo Capítulo</span>?</h2>
-                            <p className="text-xl text-white/60 font-light leading-relaxed">
+                            <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight">Vamos escrever o seu <span className="text-dourado">Próximo Capítulo</span>?</h2>
+                            <p className="text-lg text-white/60 font-light leading-relaxed">
                                 Estou aqui para guiar você em sua jornada de transformação, saúde e reconexão.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

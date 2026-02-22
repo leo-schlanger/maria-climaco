@@ -39,7 +39,7 @@ export default function Services() {
                     <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-6 py-1.5 uppercase tracking-widest text-[10px] font-bold">
                         Cuidado Profissional
                     </Badge>
-                    <h1 className="text-5xl md:text-7xl font-playfair font-bold">
+                    <h1 className="text-4xl md:text-6xl font-playfair font-bold">
                         O Menu da sua <span className="text-dourado">Cura</span>
                     </h1>
                     <p className="text-xl text-white/60 max-w-3xl mx-auto leading-relaxed font-light">
@@ -215,7 +215,7 @@ export default function Services() {
             <section className="py-20 bg-white">
                 <div className="container-custom">
                     <div className="bg-lavanda/5 border-2 border-lavanda/10 rounded-[3rem] p-12 text-center space-y-8">
-                        <h2 className="text-3xl md:text-5xl font-playfair font-bold text-ameixa">Dúvidas sobre o tratamento ideal?</h2>
+                        <h2 className="text-2xl md:text-4xl font-playfair font-bold text-ameixa">Dúvidas sobre o tratamento ideal?</h2>
                         <p className="text-xl text-ameixa/60 max-w-2xl mx-auto font-light leading-relaxed">
                             Eu posso te ajudar a escolher o protocolo mais indicado para o seu momento atual. Entre em contato para uma breve triagem.
                         </p>
