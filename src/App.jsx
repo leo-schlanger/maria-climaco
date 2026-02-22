@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
+import ScrollToTop from './components/layout/ScrollToTop'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -15,13 +15,9 @@ import Terms from './pages/Terms'
 import RefundPolicy from './pages/RefundPolicy'
 
 function App() {
-    useEffect(() => {
-        // Scroll to top on route change
-        window.scrollTo(0, 0)
-    }, [])
-
     return (
         <div className="flex flex-col min-h-screen">
+            <ScrollToTop />
             <Header />
             <main className="flex-grow">
                 <Routes>

@@ -45,17 +45,17 @@ export default function Header() {
                                 <img
                                     src="/logo.png"
                                     alt="Maria Climaco"
-                                    className="h-14 md:h-24 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
+                                    className="h-20 md:h-32 w-auto group-hover:scale-105 transition-all duration-500 drop-shadow-sm"
                                 />
                                 {scrolled && (
                                     <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-dourado rounded-full border-2 border-white animate-pulse" />
                                 )}
                             </div>
                             <div className="flex flex-col pt-1 md:pt-2">
-                                <span className="hidden xl:block font-playfair text-xl md:text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300 tracking-tight leading-none">
+                                <span className="font-playfair text-xl md:text-2xl font-bold text-ameixa group-hover:text-dourado transition-colors duration-300 tracking-tight leading-none">
                                     Maria Climaco
                                 </span>
-                                <span className="hidden xl:block text-[9px] uppercase tracking-[0.2em] text-ameixa/60 font-medium mt-2">
+                                <span className="text-[9px] uppercase tracking-[0.2em] text-ameixa/60 font-medium mt-2">
                                     Fisioterapia & Bem-estar
                                 </span>
                             </div>
