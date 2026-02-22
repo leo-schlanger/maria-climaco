@@ -116,15 +116,15 @@ export default function Shop() {
             </section>
 
             {/* Newsletter / CTA */}
-            <section className="py-20 bg-white">
+            <section className="py-16 bg-white">
                 <div className="container-custom">
-                    <div className="bg-ameixa rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+                    <div className="bg-ameixa rounded-[3rem] p-10 md:p-16 text-center relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-dourado/10 rounded-full blur-3xl -mr-32 -mt-32" />
                         <div className="absolute bottom-0 left-0 w-64 h-64 bg-lavanda/10 rounded-full blur-3xl -ml-32 -mb-32" />
 
-                        <div className="relative z-10 max-w-2xl mx-auto space-y-8">
-                            <h2 className="text-2xl md:text-4xl font-playfair font-bold text-white">Pronta para o próximo passo?</h2>
-                            <p className="text-xl text-white/60 font-light leading-relaxed">
+                        <div className="relative z-10 max-w-2xl mx-auto space-y-6">
+                            <h2 className="text-xl md:text-3xl font-playfair font-bold text-white">Pronta para o próximo passo?</h2>
+                            <p className="text-base md:text-lg text-white/60 font-light leading-relaxed">
                                 Nossos produtos digitais foram pensados para levar a experiência do consultório para o seu dia a dia.
                             </p>
                             <Button asChild size="lg" className="bg-white text-ameixa hover:bg-dourado hover:text-white h-16 px-12 rounded-2xl font-bold text-lg transition-all">

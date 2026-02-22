@@ -225,23 +225,23 @@ export default function Home() {
                     <img src="/logo.png" alt="" className="w-full max-w-4xl" />
                 </div>
 
-                <div className="container-custom relative z-10 text-center text-white space-y-12">
-                    <Quote className="h-16 w-16 mx-auto text-dourado/40" />
+                <div className="container-custom relative z-10 text-center text-white space-y-8">
+                    <Quote className="h-12 w-12 mx-auto text-dourado/40" />
 
-                    <div className="max-w-4xl mx-auto space-y-10">
-                        <blockquote className="text-3xl md:text-5xl font-playfair italic leading-[1.3] text-white/95">
+                    <div className="max-w-4xl mx-auto space-y-8">
+                        <blockquote className="text-2xl md:text-3xl lg:text-4xl font-playfair italic leading-relaxed text-white/95">
                             "{featuredTestimonials[0].text}"
                         </blockquote>
 
                         <div className="space-y-4">
                             <div className="flex justify-center gap-1">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className="h-5 w-5 text-dourado fill-dourado" />
+                                    <Star key={i} className="h-4 w-4 text-dourado fill-dourado" />
                                 ))}
                             </div>
                             <div className="space-y-1">
-                                <p className="font-playfair text-2xl font-bold tracking-tight">{featuredTestimonials[0].name}</p>
-                                <p className="text-dourado/80 text-sm font-semibold uppercase tracking-widest">{featuredTestimonials[0].service}</p>
+                                <p className="font-playfair text-xl md:text-2xl font-bold tracking-tight">{featuredTestimonials[0].name}</p>
+                                <p className="text-dourado/80 text-xs font-semibold uppercase tracking-widest">{featuredTestimonials[0].service}</p>
                             </div>
                         </div>
                     </div>
@@ -310,21 +310,21 @@ export default function Home() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 bg-white">
+            <section className="py-16 bg-white">
                 <div className="container-custom">
-                    <div className="bg-ameixa-dark rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div className="bg-ameixa-dark rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
                         {/* Decorative background glows */}
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-dourado/10 rounded-full blur-[100px]" />
-                        <div className="absolute bottom-0 left-0 w-96 h-96 bg-lavanda/10 rounded-full blur-[100px]" />
+                        <div className="absolute top-0 right-0 w-80 h-80 bg-dourado/10 rounded-full blur-[100px]" />
+                        <div className="absolute bottom-0 left-0 w-80 h-80 bg-lavanda/10 rounded-full blur-[100px]" />
 
-                        <div className="relative z-10 max-w-4xl mx-auto space-y-10">
-                            <h2 className="text-3xl md:text-5xl font-playfair font-bold leading-tight">
+                        <div className="relative z-10 max-w-3xl mx-auto space-y-8">
+                            <h2 className="text-2xl md:text-4xl font-playfair font-bold leading-tight">
                                 Sua jornada de <span className="text-dourado">despertar</span> começa agora.
                             </h2>
-                            <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed">
+                            <p className="text-base md:text-lg text-white/70 font-light leading-relaxed">
                                 Agende seu atendimento exclusivo e sinta o poder da cura que integra corpo e alma.
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+                            <div className="flex justify-center pt-4">
                                 <Button asChild size="lg" className="bg-white text-ameixa-dark hover:bg-dourado hover:text-white h-16 px-12 text-lg rounded-2xl shadow-xl transition-all duration-300">
                                     <a
                                         href={generateWhatsAppLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE)}
